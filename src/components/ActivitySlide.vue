@@ -64,7 +64,7 @@
 
 <style lang="scss" scoped>
 .activity-slide-container {
-  width: 60%;
+  width: 58%;
 }
 
 .swiper-container {
