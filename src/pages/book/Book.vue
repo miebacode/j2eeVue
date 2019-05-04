@@ -29,13 +29,15 @@
 							{{ book.price }}
 						</p>
 						<p>
-							<a 
+              <router-link :to="{name: 'Cart'}">
+							<a
 								class="btn-buy-book"
 								href="javascript:void(0)"
 								@click="buyBook(book)"
 								>
 								购买
 							</a>
+                </router-link>
 						</p>
 					</div>
 				</div>
@@ -138,6 +140,10 @@ section {
 	font-size: .8rem;
 	color: #fff;
 	background: #4d87de;
+  &.checked,
+  &:hover {
+    background: #0608ef;
+  }
 }
 
 .summary-container {
