@@ -4,7 +4,8 @@
     <ul class="book-categories">
       <li 
         class="book-category"
-        v-for="{name, title} of categories" :key="name"
+        v-for="{name, title} of
+        categories" :key="name"
         >
         <router-link 
           :to="{name: 'Category', params:{category: name}}">
@@ -43,7 +44,7 @@
 }
 
 .book-category-container {
-    width: 20%;
+    width: 18%;
 }
 
 .title {
@@ -55,25 +56,30 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+
 }
 
 .book-category {
-  width: 50%;
+  width: 100%;
   background: #f4f2ef;
+  &:hover{
+    background: #92c3c7;
+  }
   &:nth-child(odd) {
     border-right: 1px solid #dbd6d2;
   }
-  &:nth-child(4n-3), 
-  &:nth-child(4n-2) {
-    @extend %odd-line;
-  }
-  &:nth-child(4n-1),
-  &:nth-child(4n) {
+  &:nth-child(2n),
+  &:nth-child(2n-2) {
     @extend %even-line;
+  }
+  &:nth-child(2n-1),
+  &:nth-child(2n-3) {
+    @extend %odd-line;
   }
   a {
     @extend %list-item;
     font-size: 1rem;
   }
+
 }
 </style>
