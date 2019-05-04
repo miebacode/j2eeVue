@@ -1,6 +1,7 @@
 <template>
   <div class="nav-sidebar-container">
-    <ul v-for="{name, title} of navItems" :key="name">
+    <ul v-for="{name, title} of
+     navItems" :key="name">
       <li>
         <router-link 
           :to="{name: 'Topic', params: {topicName: name}}">
@@ -35,6 +36,7 @@ li {
     text-align: center;
     text-decoration: none;
     padding: .5rem 0;
+    font-size:1.5rem;
   }
   .active {
     color: #ed6c00;

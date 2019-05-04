@@ -6,6 +6,7 @@
     <img v-bind:src="scutImgUrl" width="30%">
     <br>
 		<p class="welcome">登录在线书店，购买你喜欢的书籍</p>
+    <br>
 		<button 
       class="btn-into-login" 
       @click.stop="enterLoginPopupLayer">
@@ -62,7 +63,7 @@
 @import '../assets/styles/common';
 
 .user-login-container {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   padding: .4rem;

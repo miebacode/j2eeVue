@@ -48,6 +48,7 @@ nav {
     text-decoration: none;
     color: #000;
     padding: .8rem 2rem;
+    font-size:1.5rem ;
     &:hover {
       background: rgb(231, 6, 6);
     }

@@ -74,21 +74,22 @@
 .user-login-window {
   z-index: 2;
   position: fixed;
-  top: 50vh;
+  top: 60vh;
   left: 50vw;
   width: 500px;
+  border-radius: 1rem;
   transform: translate(-50%, -50%);
-  background: #f4f2ef;
+  background: #fff;
 }
 
 header {
   display: flex;
   align-items: center;
-  background: #ef5b00;
-  padding: .5rem 1rem;
+  background: #2280ef;
+  padding: .3rem 1rem;
   h3 {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .btn-close {
     margin-left: auto;
@@ -117,9 +118,10 @@ form {
   input {
     width: 100%;
     padding: .5em;
-    border: 1px solid #999;
+    border: 1.5px solid #999;
     border-radius: .5em;
     background: transparent;
+    font-size:1.0rem;
 
     &:focus {
       outline: none;
@@ -140,6 +142,7 @@ form {
     padding: .5em 0;
     color: #fff;
     background: $site-primary-color;
+    font-size:1.0em ;
     &:hover {
       cursor: pointer;
     }
@@ -148,7 +151,7 @@ form {
 
 footer {
   border-top: 1px solid gray;
-  padding: .5rem;
+  padding: 1.0rem;
   text-align: right;
 }
 </style>
