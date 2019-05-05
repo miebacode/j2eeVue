@@ -38,6 +38,7 @@
 								购买
 							</a>
                 </router-link>
+              <el-input-number size="mini" v-model="num" @change="handleChange" :min="1" :max="10" label="数量"></el-input-number>
 						</p>
 					</div>
 				</div>
@@ -62,6 +63,11 @@
 	import {mapActions} from 'vuex'
 
 	export default {
+	  data(){
+	    return{
+	      num:1
+      }
+    },
 		name: 'Book',
 		computed: {
 			book() {
@@ -69,6 +75,9 @@
 			}
 		},
 		methods: {
+      handleChange(value) {
+        console.log(value);
+      },
 			...mapActions(['buyBook'])
 		}
 	}

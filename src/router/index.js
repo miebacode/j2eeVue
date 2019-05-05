@@ -5,6 +5,7 @@ import Topic from '@/pages/topic/Topic'
 import Category from '@/pages/category/Category'
 import Cart from '@/pages/cart/Cart'
 import Book from '@/pages/book/Book'
+import Manage from '@/pages/manage/Manage'
 
 Vue.use(Router)
 
@@ -37,6 +38,11 @@ export default new Router({
       path: '/book/:id',
       name: 'Book',
       component: Book
-    }
+    },
+    {
+      path: '/manage',
+      name: 'Manage',
+      component: Manage
+    },
   ]
 })

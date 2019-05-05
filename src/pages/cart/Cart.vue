@@ -18,6 +18,9 @@
         <li class="col-price">
           <span class="items-bar-title">价格</span>
         </li>
+        <li class="col-num">
+          <span class="item-bar-title">数量</span>
+        </li>
         <li class="col-edit">
           <span class="items-bar-title">编辑</span>
         </li>
@@ -46,6 +49,9 @@
             </li>
             <li class="col-price">
               <span class="price"> {{ book.price }} </span>
+            </li>
+            <li class="col-price">
+              <span class="price"> {{ book.num }} </span>
             </li>
             <li  class="col-edit">
               <img class="btn-delete" 
@@ -183,6 +189,10 @@ ul {
   }
 }
 .col-price {
+  width: 15%;
+  padding: 1rem;
+}
+.col-num{
   width: 15%;
   padding: 1rem;
 }

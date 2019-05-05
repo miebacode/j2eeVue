@@ -22,6 +22,11 @@
             购物车
           </router-link>
         </li>
+        <li>
+          <router-link :to="{name: 'Manage'}">
+            管理
+          </router-link>
+        </li>
       </ul>
     </nav>
   </div>
